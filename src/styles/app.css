@@ -11,3 +11,7 @@ body {
   justify-content: center;
   color: white;
 }
+
+.chart {
+  height: 400px;
+}
