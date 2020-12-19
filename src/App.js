@@ -1,10 +1,12 @@
 import React from 'react';
 
 // mock-data
-import countryFoodData from './mock-data/countryFoodData';
+// import countryFoodData from './mock-data/countryFoodData';
+import platform_segment_data from './mock-data/platform_segment_data';
 
-// child component
-import FoodsByCountryBarChart from './components/charts/FoodsByCountryBarChart';
+// child components
+// import FoodsByCountryBarChart from './components/charts/FoodsByCountryBarChart';
+import PlatformSegmentsBarChart from './components/charts/PlatformSegmentsBarChart';
 
 // styles
 import './styles/app.css';
@@ -15,7 +17,8 @@ function App() {
       <header className="app-header">
         <h1>Nivo Bar Chart</h1>
       </header>
-      <FoodsByCountryBarChart data={countryFoodData} />
+      {/* <FoodsByCountryBarChart data={countryFoodData} /> */}
+      <PlatformSegmentsBarChart data={platform_segment_data} />
     </div>
   );
 }
