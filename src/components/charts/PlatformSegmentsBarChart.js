@@ -2,13 +2,13 @@ import React from 'react';
 
 import { ResponsiveBar } from '@nivo/bar';
 
-const FoodsByCountryBarChart = ({ data }) => {
+const PlatformSegmentsBarChart = ({ data }) => {
   return (
     <div className="chart">
       <ResponsiveBar
         data={data}
-        keys={['kebab']}
-        indexBy="country"
+        keys={['value']}
+        indexBy="segment"
         margin={{ top: 50, right: 130, bottom: 50, left: 120 }}
         padding={0.25}
         layout="horizontal"
@@ -23,14 +23,14 @@ const FoodsByCountryBarChart = ({ data }) => {
           tickSize: 5,
           tickPadding: 1,
           tickRotation: 0,
-          legend: 'food',
+          legend: 'asset count',
           legendPosition: 'middle',
           legendOffset: 31,
         }}
         axisLeft={{
           tickSize: 5,
           tickPadding: 5,
-          tickRotation: 30,
+          tickRotation: 0,
         }}
         enableGridX={true}
         enableGridY={false}
@@ -45,4 +45,4 @@ const FoodsByCountryBarChart = ({ data }) => {
   );
 };
 
-export default FoodsByCountryBarChart;
+export default PlatformSegmentsBarChart;
