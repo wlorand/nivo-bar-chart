@@ -4,7 +4,7 @@ import { ResponsiveBar } from '@nivo/bar';
 
 const PlatformSegmentsBarChart = ({ data }) => {
   return (
-    <div className="chart">
+    <div className="chart-container">
       <ResponsiveBar
         data={data}
         keys={['value']}
@@ -14,9 +14,9 @@ const PlatformSegmentsBarChart = ({ data }) => {
         layout="horizontal"
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
-        colors={['#008F11']}
+        colors={['#0000FF']}
         borderWidth={1}
-        borderColor={['#008F11']}
+        borderColor={['#0000FF']}
         axisTop={null}
         axisRight={null}
         axisBottom={{

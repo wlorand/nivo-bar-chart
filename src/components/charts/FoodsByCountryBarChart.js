@@ -4,7 +4,7 @@ import { ResponsiveBar } from '@nivo/bar';
 
 const FoodsByCountryBarChart = ({ data }) => {
   return (
-    <div className="chart">
+    <div className="chart-container">
       <ResponsiveBar
         data={data}
         keys={['kebab']}
